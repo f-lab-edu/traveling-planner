@@ -13,4 +13,8 @@
 - Intellij IDEA
 
 <h2>페이지</h2>
-test3
+<img width="251" alt="로긍니" src="https://user-images.githubusercontent.com/53288312/99758282-98654700-2b34-11eb-982b-7be405360116.PNG">
+<img width="357" alt="회궝가입" src="https://user-images.githubusercontent.com/53288312/99758293-a0bd8200-2b34-11eb-9fe3-f8aa99e8c680.PNG">
+<img width="676" alt="메인페이지" src="https://user-images.githubusercontent.com/53288312/99758296-a1eeaf00-2b34-11eb-803a-9f8c7e37fe42.PNG">
+<img width="724" alt="예약페이지" src="https://user-images.githubusercontent.com/53288312/99758299-a4510900-2b34-11eb-9295-7a99885ecc18.PNG">
+<img width="493" alt="내정보 페이지" src="https://user-images.githubusercontent.com/53288312/99758301-a61acc80-2b34-11eb-99cb-46fe40e81e78.PNG">
