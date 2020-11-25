@@ -13,13 +13,13 @@
 - Intellij IDEA
 
 <h2>페이지</h2>
-<div style="display:inline">- 로그인 페이지
+<div style="display:inline-block">- 로그인 페이지
 <img width="251" height="400" alt="로그인" src="https://user-images.githubusercontent.com/53288312/99758282-98654700-2b34-11eb-982b-7be405360116.PNG"></div>
-<div style="display:inline">- 회원가입 페이지
+<div style="display:inline-block">- 회원가입 페이지
 <img width="251" height="400" alt="회원가입" src="https://user-images.githubusercontent.com/53288312/99758293-a0bd8200-2b34-11eb-9fe3-f8aa99e8c680.PNG"></div>
-<div style="display:inline">- 메인 페이지
+<div style="display:inline-block">- 메인 페이지
 <img width="251" height="400" alt="메인페이지" src="https://user-images.githubusercontent.com/53288312/99758296-a1eeaf00-2b34-11eb-803a-9f8c7e37fe42.PNG"></div>
-<div style="display:inline">- 예약 페이지
+<div style="display:inline-block">- 예약 페이지
 <img width="251" height="400" alt="예약페이지" src="https://user-images.githubusercontent.com/53288312/99758299-a4510900-2b34-11eb-9295-7a99885ecc18.PNG"></div>
-<div style="display:inline">- 내 정보 페이지
+<div style="display:inline-block">- 내 정보 페이지
 <img width="251" height="400" alt="내정보 페이지" src="https://user-images.githubusercontent.com/53288312/99758301-a61acc80-2b34-11eb-99cb-46fe40e81e78.PNG"></div>
