@@ -11,3 +11,7 @@
 - Java 8
 - MySQL
 - Intellij IDEA
+
+<h2>페이지</h2>
+<img width="1000" height="450" alt="upPage" src="https://user-images.githubusercontent.com/53288312/100232487-bdf6b400-2f6b-11eb-9009-291ed23fc724.PNG">
+<img width="1000" height="450" alt="downPage" src="https://user-images.githubusercontent.com/53288312/100232480-bc2cf080-2f6b-11eb-98df-7640ae6e4b5f.PNG">
