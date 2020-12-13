@@ -3,10 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter
+        </filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
     <context-param>
         <param-name>applicationContext</param-name>
-        <param-value>WEB-INF/config/applicationContext.xml</param-value>
+        <param-value>/WEB-INF/config/applicationContext.xml</param-value>
     </context-param>
 
     <listener>
@@ -14,15 +27,16 @@
     </listener>
 
     <servlet>
-        <servlet-name>user</servlet-name>
+        <servlet-name>User</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>WEB-INF/config/userServlet.xml</param-value>
+            <param-value>/WEB-INF/config/user-servlet.xml</param-value>
         </init-param>
     </servlet>
+
     <servlet-mapping>
-        <servlet-name>user</servlet-name>
+        <servlet-name>User</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
