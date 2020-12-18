@@ -1,6 +1,6 @@
-package com.traveling.planner.vo;
+package com.traveling.planner.dto;
 
-public class UsersVO {
+public class UsersDto {
     private String id;
     private String password;
     private String name;
@@ -10,21 +10,37 @@ public class UsersVO {
         return id;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getEmail() {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
-        return "UsersVO{" +
+        return "UsersDto{" +
                 "id='" + id + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
