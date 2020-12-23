@@ -5,24 +5,32 @@ import com.traveling.planner.signin.Sha256;
 import com.traveling.planner.signin.service.SigninService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class SigninController {
 
-    @Autowired
+    public static boolean flag = false;
+
+    @Autowired(required = false)
     SigninService signinService;
 
-    @RequestMapping(value = "signin", method = RequestMethod.POST)
+    //postman으로 검증해야한다.
+    @RequestMapping(value = "/signin", method = RequestMethod.POST)
     @ResponseBody
-    public String signin(ModelAndView mav, UsersDto dto) {
+    public String signin(@Validated @RequestBody UsersDto dto, BindingResult bindingResult) {
         String sha = Sha256.encrypt(dto.getPassword());
         dto.setPassword(sha);
-        signinService.signin(dto);
-        System.out.println(sha);
+        if (flag) {
+            System.out.println(bindingResult);
+            System.out.println(sha);
+        }
+        //signinService.signin(dto);
         return dto.toString();
     }
 
