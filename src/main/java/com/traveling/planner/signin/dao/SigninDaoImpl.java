@@ -11,8 +11,6 @@ public class SigninDaoImpl implements SigninDao {
     @Autowired
     SqlSessionTemplate mybatis;
 
-    @Override
     public void signin(UsersDto dto) {
-        mybatis.insert("sign", dto);
     }
 }
