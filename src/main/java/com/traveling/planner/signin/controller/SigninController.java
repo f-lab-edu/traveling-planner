@@ -22,7 +22,7 @@ public class SigninController {
 
     //postman으로 검증해야한다.
     @RequestMapping(value = "/signin", method = RequestMethod.POST)
-    @ResponseBody
+    //@ResponseBody
     public String signin(@Validated @RequestBody UsersDto dto, BindingResult bindingResult) {
         String sha = Sha256.encrypt(dto.getPassword());
         dto.setPassword(sha);
@@ -30,7 +30,7 @@ public class SigninController {
             System.out.println(bindingResult);
             System.out.println(sha);
         }
-        //signinService.signin(dto);
+        signinService.signin(dto);
         return dto.toString();
     }
 

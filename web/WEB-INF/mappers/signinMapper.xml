@@ -3,8 +3,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="signin">
-    <insert id="sign" parameterType="com.traveling.planner.dto.UsersDto">
+<mapper namespace="com.traveling.planner.signin.dao.SigninDao">
+    <insert id="signin" parameterType="com.traveling.planner.dto.UsersDto">
         INSERT INTO users
         VALUES(#{id}, #{password}, #{name}, #{email})
     </insert>

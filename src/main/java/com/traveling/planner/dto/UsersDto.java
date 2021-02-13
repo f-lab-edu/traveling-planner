@@ -17,7 +17,7 @@ public class UsersDto {
     private String password;
     @NotBlank(message="이름을 입력해 주세요")
     private String name;
-    @Email(message="아메일을 입력해 주세요")
+    @Email(message="아메일을 형식에 맞게 입력해 주세요")
     private String email;
 
     public String getId() {

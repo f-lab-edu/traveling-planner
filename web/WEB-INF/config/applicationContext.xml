@@ -7,7 +7,7 @@
     <context:component-scan base-package="com.traveling.planner"></context:component-scan>
 
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://127.0.0.1:3306/planner"/>
         <property name="username" value="root"/>
         <property name="password" value="xorgus12"/>
@@ -16,7 +16,7 @@
     <!--mybatis 설정-->
     <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
-        <property name="mapperLocations" value="WEB-INF/mappers/*.xml"></property>
+        <property name="mapperLocations" value="/WEB-INF/mappers/*Mapper.xml"></property>
     </bean>
     <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"></constructor-arg>
