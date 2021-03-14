@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class SigninServiceImpl implements SigninService {
 
     @Autowired
-    SigninDao signinDao;
+    public SigninDao signinDao;
 
     public void signin(UsersDto dto) {
         signinDao.signin(dto);
