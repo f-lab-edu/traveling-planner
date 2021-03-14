@@ -1,34 +1,16 @@
 package com.traveling.planner.vo;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class UsersVO {
     private String id;
     private String password;
     private String name;
     private String email;
 
-    public String getId() {
-        return id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    @Override
-    public String toString() {
-        return "UsersVO{" +
-                "id='" + id + '\'' +
-                ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
-    }
 }
