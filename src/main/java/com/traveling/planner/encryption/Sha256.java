@@ -1,10 +1,13 @@
-package com.traveling.planner.signin;
+package com.traveling.planner.encryption;
+
+import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
-public class Sha256 {
-    public static String encrypt(String password){
+@Component
+public class Sha256 implements Encryption{
+    public String encrypt(String password){
         try{
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             md.update(password.getBytes());
